@@ -34,13 +34,10 @@ img {
   width: 300px;
   border: 1px solid skyblue;
   border-radius: 10px;
-  margin-top: 10px;
-  display: inline-block;
 }
 
 .main-1 {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   text-align: center;
 }
 
@@ -58,4 +55,13 @@ img {
 }
 .dpblock {
   display: block;
+}
+
+.bt-grey {
+  background: rgb(57, 87, 99);
+}
+
+.center-img {
+  display: block;
+  margin: 0px auto;
 }
