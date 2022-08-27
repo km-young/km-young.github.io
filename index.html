@@ -10,6 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <title>놀러가자</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 
 <body class="body">
@@ -24,12 +25,22 @@
       <div class="main-1">
         <h2>네잎클로버</h2>
         <p>가격 : 99,000원</p>
-        <button class="bt shadow">위치</button>
-        <button class="bt shadow">사진</button>
-        <button class="bt shadow">리뷰</button>
+        <button id="btw" class="bt shadow">위치</button>
+        <button class="bt bt-p shadow">사진</button>
+        <button class="bt bt-l shadow">리뷰</button>
+      </div>
+
+      <div class="map dpnone">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1117.3450632355514!2d127.50871928793926!3d37.617946222047365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3563398049200201%3A0x9243188053d5901d!2z6rCA7Y-JIOuEpOyeju2BtOuhnOuyhCDsubTrnbzrsJgg6riA656o7ZWR!5e0!3m2!1sko!2skr!4v1661589411083!5m2!1sko!2skr" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
     </div>
+
+    <script>
+      $('#btw').on('click', function(){
+      $('.map').toggleClass('dpnone');
+    })
+    </script>
 
     
 
