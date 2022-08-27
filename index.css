@@ -34,13 +34,14 @@ img {
   width: 300px;
   border: 1px solid skyblue;
   border-radius: 10px;
-  margin: 10px;
+  margin-top: 10px;
   display: inline-block;
 }
 
 .main-1 {
   display: inline-block;
   vertical-align: middle;
+  text-align: center;
 }
 
 .bt {
