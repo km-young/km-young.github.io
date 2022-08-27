@@ -49,7 +49,7 @@ img {
   border-radius: 10px;
   color: white;
   font-weight: 600;
-  margin: 0 10px 5px 0px
+  margin: 0 10px 10px 0px
 }
 
 .dpnone {
@@ -76,5 +76,12 @@ img {
   height: 347px;
 }
 
+.ft {
+  height: 200px;
+}
 
+.hr-end {
+  padding: 20px;
+  border: none;
+}
 
