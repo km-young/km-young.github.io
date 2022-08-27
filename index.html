@@ -21,7 +21,7 @@
 
   <main class="container shadow-sm">
     <div class="list-1">
-      <img class="shadow-sm" src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w435&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20210708_287%2F1625731835132HKC7s_JPEG%2F%25B1%25DB%25B7%25A5%25C7%25CE%25B3%25BB%25BA%25CE4.jpg" alt="네잎클로버메인">
+      <img class="shadow-sm center-img" src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w435&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20210708_287%2F1625731835132HKC7s_JPEG%2F%25B1%25DB%25B7%25A5%25C7%25CE%25B3%25BB%25BA%25CE4.jpg" alt="네잎클로버메인">
       <div class="main-1">
         <h2>네잎클로버</h2>
         <p>가격 : 99,000원</p>
@@ -31,13 +31,14 @@
       </div>
 
       <div class="map dpnone">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1117.3450632355514!2d127.50871928793926!3d37.617946222047365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3563398049200201%3A0x9243188053d5901d!2z6rCA7Y-JIOuEpOyeju2BtOuhnOuyhCDsubTrnbzrsJgg6riA656o7ZWR!5e0!3m2!1sko!2skr!4v1661589411083!5m2!1sko!2skr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="center-img"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1117.3450632355514!2d127.50871928793926!3d37.617946222047365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3563398049200201%3A0x9243188053d5901d!2z6rCA7Y-JIOuEpOyeju2BtOuhnOuyhCDsubTrnbzrsJgg6riA656o7ZWR!5e0!3m2!1sko!2skr!4v1661589411083!5m2!1sko!2skr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
     </div>
 
     <script>
       $('#btw').on('click', function(){
+      $('#btw').toggleClass('bt-grey');
       $('.map').toggleClass('dpnone');
     })
     </script>
