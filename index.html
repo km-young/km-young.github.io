@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <title>놀러가자</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <title>놀러가자</title>
 </head>
 
 <body class="body">
@@ -21,7 +21,7 @@
   </header>
 
   <main class="container shadow-sm">
-    <div class="list-1">
+    <div class="list-1"> <!--네잎클로버-->
       <img class="shadow-sm center-img"
         src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w435&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20210708_287%2F1625731835132HKC7s_JPEG%2F%25B1%25DB%25B7%25A5%25C7%25CE%25B3%25BB%25BA%25CE4.jpg"
         alt="네잎클로버메인">
@@ -30,44 +30,57 @@
         <p>가격 : 99,000원</p>
         <button id="btw" class="bt shadow">위치</button>
         <button id="btp" class="bt bt-p shadow">사진</button>
-        <button id="btl"class="bt bt-l shadow" onclick="window.open('https://map.naver.com/v5/search/%EA%B0%80%ED%8F%89%20%EB%84%A4%EC%9E%8E%ED%81%B4%EB%A1%9C%EB%B2%84%20%EC%B9%B4%EB%9D%BC%EB%B0%98%20%EA%B8%80%EB%9E%A8%ED%95%91/place/1601973825?c=14164363.5313089,4525555.4237998,10,0,0,0,dh&isCorrectAnswer=true')">리뷰보러가기 </button>
+        <button id="btl" class="bt bt-l shadow"
+          onclick="window.open('https://map.naver.com/v5/search/%EA%B0%80%ED%8F%89%20%EB%84%A4%EC%9E%8E%ED%81%B4%EB%A1%9C%EB%B2%84%20%EC%B9%B4%EB%9D%BC%EB%B0%98%20%EA%B8%80%EB%9E%A8%ED%95%91/place/1601973825?c=14164363.5313089,4525555.4237998,10,0,0,0,dh&isCorrectAnswer=true')">리뷰보러가기
+        </button>
       </div>
 
       <div class="map dpnone">
+        <!--구글맵을 작게 가져옴, width 300. height 300-->
         <iframe class="center-img"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1117.3450632355514!2d127.50871928793926!3d37.617946222047365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3563398049200201%3A0x9243188053d5901d!2z6rCA7Y-JIOuEpOyeju2BtOuhnOuyhCDsubTrnbzrsJgg6riA656o7ZWR!5e0!3m2!1sko!2skr!4v1661589411083!5m2!1sko!2skr"
           width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
-      <div id="carouselExampleIndicators" class="carousel slide pt1 dpnone" data-bs-ride="true">
+      <!--아래는 부트스트랩 이미지 슬라이드-->
+      <div id="carouselExampleIndicators" class="carousel slide pt1 dpnone pt" data-bs-ride="true">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://naverbooking-phinf.pstatic.net/20210708_122/1625731835237kTTWX_JPEG/%B1%DB%B7%A5%C7%CE%B3%BB%BA%CE6.jpg" class="d-block w-100" alt="...">
+            <img
+              src="https://naverbooking-phinf.pstatic.net/20210708_122/1625731835237kTTWX_JPEG/%B1%DB%B7%A5%C7%CE%B3%BB%BA%CE6.jpg"
+              class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="https://naverbooking-phinf.pstatic.net/20210708_84/1625731836004Aud0M_JPEG/%B1%DB%B7%A5%C7%CE%B3%BB%BA%CE26.jpg" class="d-block w-100" alt="...">
+            <img
+              src="https://naverbooking-phinf.pstatic.net/20210708_84/1625731836004Aud0M_JPEG/%B1%DB%B7%A5%C7%CE%B3%BB%BA%CE26.jpg"
+              class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="https://naverbooking-phinf.pstatic.net/20210708_249/1625731836119pxAVT_JPEG/%B1%DB%B7%A5%C7%CE_%BF%DC%BA%CE10.jpg" class="d-block w-100" alt="...">
+            <img
+              src="https://naverbooking-phinf.pstatic.net/20210708_249/1625731836119pxAVT_JPEG/%B1%DB%B7%A5%C7%CE_%BF%DC%BA%CE10.jpg"
+              class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
-    </div>
     </div>
 
     <script>
@@ -79,15 +92,240 @@
         $('#btp').toggleClass('bt-grey');
         $('.pt1').toggleClass('dpnone');
       })
-
     </script>
+<!--------------------->
+    <hr>
+
+    <div class="list-1"> <!--위크팜-->
+      <img class="shadow-sm center-img"
+        src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w435&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20200525_134%2F1590384466479QKTrR_JPEG%2F1.jpg"
+        alt="워크팜메인">
+      <div class="main-1">
+        <h2>위크팜</h2>
+        <p>가격 : 109,000원</p>
+        <button id="btw1" class="bt shadow">위치</button>
+        <button id="btp1" class="bt bt-p shadow">사진</button>
+        <button id="btl1" class="bt bt-l shadow"
+          onclick="window.open('https://map.naver.com/v5/search/%EC%9C%84%ED%81%AC%ED%8C%9C%ED%8E%9C%EC%85%98%EA%B8%80%EB%9E%A8%ED%95%91%EC%BA%A0%ED%95%91/place/35215487?c=14172859.4125824,4553762.6255694,15,0,0,0,dh&isCorrectAnswer=true')">리뷰보러가기
+        </button>
+      </div>
+
+      <div class="map1 dpnone">
+        <!--구글맵을 작게 가져옴-->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.803587926019!2d127.32085423530606!3d37.818069314987284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35632d632562b14b%3A0x6e4efa644ad5efa0!2z6rCA7Y-JIOychO2BrO2MnOq4gOueqO2VkSDtjpzshZg!5e0!3m2!1sko!2skr!4v1661614525750!5m2!1sko!2skr"
+          width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!--아래는 부트스트랩 이미지 슬라이드-->
+      <div id="carouselExampleIndicators1" class="carousel slide pt11 dpnone pt" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w435&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20190221_59%2F1550736746284Q2AAx_JPEG%2F6.jpg"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w435&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20190221_118%2F1550736746930vWQ5O_JPEG%2F9.jpg"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w435&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20200525_99%2F1590384464800bDv8Y_JPEG%2F3.jpg"
+              class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    </div>
+
+    <script>
+      $('#btw1').on('click', function () {
+        $('#btw1').toggleClass('bt-grey');
+        $('.map1').toggleClass('dpnone');
+      })
+      $('#btp1').on('click', function () {
+        $('#btp1').toggleClass('bt-grey');
+        $('.pt11').toggleClass('dpnone');
+      })
+    </script>
+<!--------------------->
+    <hr>
+
+<div class="list-1"><!--비올레띠펜션-->
+  <img class="shadow-sm center-img"
+    src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w435&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20200615_33%2F1592185534651Ea6nk_JPEG%2FKakaoTalk_20200502_235139699.jpg"
+    alt="비올레띠펜션메인">
+  <div class="main-1">
+    <h2>비올레띠펜션</h2>
+    <p>가격 : 100,000원</p>
+    <button id="btw2" class="bt shadow">위치</button>
+    <button id="btp2" class="bt bt-p shadow">사진</button>
+    <button id="btl2" class="bt bt-l shadow"
+      onclick="window.open('https://map.naver.com/v5/search/%EB%B9%84%EC%98%AC%EB%A0%88%EB%9D%A0%ED%8E%9C%EC%85%98%ED%8E%9C%EC%85%98/place/1232702265?c=14178365.5640277,4563708.4317819,14,0,0,0,dh&isCorrectAnswer=true')">리뷰보러가기
+    </button>
+  </div>
+
+  <div class="map2 dpnone">
+    <!--구글맵을 작게 가져옴-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.750103885574!2d127.36765401607465!3d37.88952641332055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35632b18b8dc6cdb%3A0xcdcd265201a5bc9c!2z67mE7Jis66CI652gIO2OnOyFmA!5e0!3m2!1sko!2skr!4v1661616365135!5m2!1sko!2skr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!--아래는 부트스트랩 이미지 슬라이드-->
+  <div id="carouselExampleIndicators2" class="carousel slide pt12 dpnone pt" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w435&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20200929_230%2F1601374225584xbgzc_JPEG%2FKakaoTalk_20200929_165145912.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w435&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20200429_210%2F1588170050759BvWe6_JPEG%2FD65A3443.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w435&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20210612_107%2F1623481269572LFILg_JPEG%2FKakaoTalk_20210612_155815467.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+</div>
+
+<script>
+  $('#btw2').on('click', function () {
+    $('#btw2').toggleClass('bt-grey');
+    $('.map2').toggleClass('dpnone');
+  })
+  $('#btp2').on('click', function () {
+    $('#btp2').toggleClass('bt-grey');
+    $('.pt12').toggleClass('dpnone');
+  })
+</script>
+<!--------------------->
+<hr>
+
+<div class="list-1"><!--파인벨리글램핑펜션-->
+  <img class="shadow-sm center-img"
+    src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w435&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20200418_31%2F1587198902773Ez5kz_JPEG%2FKakaoTalk_20200418_173429119.jpg"
+    alt="파인벨리글램핑펜션메인">
+  <div class="main-1">
+    <h2>파인벨리글램핑펜션</h2>
+    <p>가격 : 109,000원</p>
+    <button id="btw3" class="bt shadow">위치</button>
+    <button id="btp3" class="bt bt-p shadow">사진</button>
+    <button id="btl3" class="bt bt-l shadow"
+      onclick="window.open('https://map.naver.com/v5/search/%ED%8C%8C%EC%9D%B8%EB%B2%A8%EB%A6%AC%EA%B8%80%EB%9E%A8%ED%95%91%ED%8E%9C%EC%85%98/place/1726703303?c=14167620.4501789,4561805.3838316,15,0,0,0,dh&placePath=%3Fentry%253Dpll')">리뷰보러가기
+    </button>
+  </div>
+
+  <div class="map3 dpnone">
+    <!--구글맵을 작게 가져옴-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.274697677988!2d127.27501431607452!3d37.87725811402813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cd4ea6a61f88b%3A0xa2c1f55c250b0d61!2z7YyM7J2467Ko66as7Y6c7IWY!5e0!3m2!1sko!2skr!4v1661618334162!5m2!1sko!2skr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!--아래는 부트스트랩 이미지 슬라이드-->
+  <div id="carouselExampleIndicators3" class="carousel slide pt13 dpnone pt" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w435&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20200414_138%2F1586839359099w8EJQ_JPEG%2F06.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w435&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20200414_109%2F1586839360779YQejv_JPEG%2F11.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w435&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20200414_285%2F15868393611600whcx_JPEG%2F12.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+</div>
+
+<script>
+  $('#btw3').on('click', function () {
+    $('#btw3').toggleClass('bt-grey');
+    $('.map3').toggleClass('dpnone');
+  })
+  $('#btp3').on('click', function () {
+    $('#btp3').toggleClass('bt-grey');
+    $('.pt13').toggleClass('dpnone');
+  })
+</script>
+
     <script>
       $('a[data-slide="prev"]').click(function () {
-        $('#carouselExampleIndicators').carousel('prev');
+        $('#carouselExampleIndicators1').carousel('prev');
       });
 
       $('a[data-slide="next"]').click(function () {
-        $('carouselExampleIndicators').carousel('next');
+        $('#carouselExampleIndicators1').carousel('next');
       });
     </script>
 
@@ -95,7 +333,9 @@
 
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
