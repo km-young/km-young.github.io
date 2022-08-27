@@ -1,8 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
+
 html,body {
   height: 100%;
-  max-width: 720px;
+  min-width: 720px;
 }
 
 .body {
-  background-color: aqua;
+  background-color: rgba(238, 238, 238, 0.849);
+}
+
+.container {
+  background-color: white;
+  height: 100%;
+}
+
+#header {
+  background-color: white;
+  text-align: center;
+  margin: 5% 20%;
+  padding: 10px;
+}
+
+#header h1 {
+  margin: 0;
+  font-family: 'Gaegu', cursive;
+  font-weight: 600;
+  color: skyblue;
 }
