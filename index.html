@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <title>놀러가자</title>
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title>놀러가자</title>
 </head>
 
 <body class="body">
@@ -30,7 +30,7 @@
         <p>가격 : 99,000원</p>
         <button id="btw" class="bt shadow">위치</button>
         <button id="btp" class="bt bt-p shadow">사진</button>
-        <button class="bt bt-l shadow">리뷰</button>
+        <button id="btl"class="bt bt-l shadow" onclick="window.open('https://map.naver.com/v5/search/%EA%B0%80%ED%8F%89%20%EB%84%A4%EC%9E%8E%ED%81%B4%EB%A1%9C%EB%B2%84%20%EC%B9%B4%EB%9D%BC%EB%B0%98%20%EA%B8%80%EB%9E%A8%ED%95%91/place/1601973825?c=14164363.5313089,4525555.4237998,10,0,0,0,dh&isCorrectAnswer=true')">리뷰보러가기 </button>
       </div>
 
       <div class="map dpnone">
@@ -40,33 +40,33 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
-      <div id="carouselExampleIndicators" class="carousel slide pt1 dpnone" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+      <div id="carouselExampleIndicators" class="carousel slide pt1 dpnone" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="https://naverbooking-phinf.pstatic.net/20210708_122/1625731835237kTTWX_JPEG/%B1%DB%B7%A5%C7%CE%B3%BB%BA%CE6.jpg" alt="First slide">
+            <img src="https://naverbooking-phinf.pstatic.net/20210708_122/1625731835237kTTWX_JPEG/%B1%DB%B7%A5%C7%CE%B3%BB%BA%CE6.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="https://naverbooking-phinf.pstatic.net/20210708_167/1625731835532CYF73_JPEG/%B1%DB%B7%A5%C7%CE%B3%BB%BA%CE17.jpg" alt="Second slide">
+            <img src="https://naverbooking-phinf.pstatic.net/20210708_84/1625731836004Aud0M_JPEG/%B1%DB%B7%A5%C7%CE%B3%BB%BA%CE26.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="https://naverbooking-phinf.pstatic.net/20210708_249/1625731836119pxAVT_JPEG/%B1%DB%B7%A5%C7%CE_%BF%DC%BA%CE10.jpg" alt="Third slide">
+            <img src="https://naverbooking-phinf.pstatic.net/20210708_249/1625731836119pxAVT_JPEG/%B1%DB%B7%A5%C7%CE_%BF%DC%BA%CE10.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      
+
     </div>
     </div>
 
@@ -79,18 +79,23 @@
         $('#btp').toggleClass('bt-grey');
         $('.pt1').toggleClass('dpnone');
       })
-      
 
-      
+    </script>
+    <script>
+      $('a[data-slide="prev"]').click(function () {
+        $('#carouselExampleIndicators').carousel('prev');
+      });
+
+      $('a[data-slide="next"]').click(function () {
+        $('carouselExampleIndicators').carousel('next');
+      });
     </script>
 
 
 
   </main>
 
-
-
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>
